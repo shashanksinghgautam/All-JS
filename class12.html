@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Anonymous Function\\  --> func without name (Are not HOISTED)
+
+        /* function (){  // will not work like this
+            console.log("I'm Anonymous");
+        } */
+        //
+        // to make this working:- Use Function Expression
+        //
+        // let x=function(){ // assign the func to a variable
+        //     console.log("HELLO BOII");
+        // }
+        // x(); // then use variable as a func call or to invoke the func
+        // 
+        //------> With Parameters ---->
+        //
+        // let x=function(word){
+        //     console.log(word);
+        // }
+        // x("ARES") // will log ARES
+        //
+        //
+        // x("ARES") // will not work...as let is not hoisted (even var will not work)
+        // let x=function(word){
+        //     console.log(word);
+        // }
+
+        // Exercise ----->
+        // let x=function(number){
+        //     if(number%3==0 && number %5==0)
+        //     console.log("DIVISIBLE");
+        //     else
+        //     console.log("NOT DIVISIBLE");
+        // }
+        // let y=prompt("Enter a number")
+        // x(y);
+
+        // return keyword
+        //
+        //  function xyz(a,b){
+        //     return a+b
+        //  }
+        //  let sum=xyz(3,57) 
+        //  console.log(sum); // will log 60
+        //  console.log(xyz(3,4)) // will log 7
+
+        // Exercise
+        //
+        // let str=prompt("Enter string")
+        //
+        // let x=function(word){
+        //   return word.charAt(0).toUpperCase() + word.slice(1)
+        // }
+        // console.log(x(str));
+
+
+        // ARROW FUNCTIONS \\ modification of anonymous function but function keyword is not used here (also not HOISTED)
+        /*  Syntax:-
+
+           let variable= () => {
+
+            } 
+        */
+      
+        // let x= (a,b)=>{
+        //     console.log(a+b);
+        // }
+        // x(5,7) // will log 12
+       
+        // short hand (one liner way) for arrow func when we need to return one line of code (function with only one expression) and no need of curly braces and return keyword to return a value
+        //
+        // let x= (a,b)=> a+b    // will return a+b
+        // console.log(x(4,5));  // will log 9
+        // console.log(x(4,50)); // will log 54
+
+        //Exercise
+        // let x=(word)=>word.charAt(0).toUpperCase() + word.slice(1)
+        // console.log(x("xyz")); // will log Xyz
+
+
+
+
+
+    </script>
+</body>
+</html>

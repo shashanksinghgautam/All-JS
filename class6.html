@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    /* VAR --->
+       re-declaration and re-initialization is allowed
+       has global scope
+       re-assignment is allowed
+    */
+
+    // { // scoping the content -->start of scope
+    //     var x=5
+    // }--> end of scope
+    // console.log(x); // will log 5 without as var is global
+
+     
+
+     /* LET --->
+       re-declaration and re-initialization are not allowed in same scope
+       re-assignment is allowed (changing value)
+       *V.I.P* it is not global but is block scope
+    */
+    
+    // let x
+    // let x // will throw error as it already been declared
+
+    // {
+    //     let x=5
+    // }
+    // console.log(x); // not found error as let is not global
+
+    //  {
+    //      let x=5
+    //      console.log(x); // it will work and log 5 as it's in same scope
+    //  }
+
+    // let x=5
+    // {
+    //     console.log(x); // will log 5 as x is declared above this scope
+    // }
+
+
+    /* CONST --->
+       re-declaration and re-initialization are not allowed in same scope
+       re-assignment is not allowed (changing value) as the name suggest constant value
+       *V.I.P* it is not global but is block scope
+    */
+
+    //  {
+    //      const x=5
+    //  }
+    //  console.log(x);  // error bcz of scope
+
+   //  {
+   //      const x=5
+   //      x=7  // error as re assign not allowed and this x will not be considered as var x as in same scope it's already a const type x
+   //  }
+
+   // Outer scope values will be accessible by inner scope IFF there is no other declaration in inner scope with same variable name
+</script>
+</html>

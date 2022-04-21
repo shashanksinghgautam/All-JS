@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //HOISTING\\ --->(for all let var and const) when something(all declarations but not initializations) is pushed/hoisted to the top
+
+    //let and const are hoisted as well but you cannt access them before init. bcz these remain in temporal dead zone(place where variable is declared but not init)
+
+
+    // console.log(x); //error
+
+    // console.log(x); // error as x is not hoisted as no identifier is put before x in next line...here is will not be trated as var for the above console statement
+    // x=10   // bcz it looks like an assignment not a declaration to JS
+
+    // console.log(x); // undefined as variable x is not defined and hoisted to the top / start of the code so no error but undefined as in next line x is declared as var
+    // var x    // it looks like a declaration to JS
+
+    // console.log(x); // undefined
+    // var x=5;
+    // console.log(x); // 5
+
+     
+    //  console.log(x); // error (let cannt acces x before initi.. bcx x in next line is of let type)
+    //  let x=5
+
+    //  console.log(x); // error (const cannt acces x before initi.. bcx x in next line is of const type)
+    //  const x=5
+
+    //LOOPS\\-->> to iterate through a collection of data
+    
+    //continue--> skip current iteration
+    //break--> skip all further iterations
+</script>
+</html>

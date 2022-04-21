@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>POP-UPs in JS</h1>
+    <h3 id="variable"></h3>
+</body>
+<script>
+    // alert('Hi JS, welcome aboard')
+    // confirm('Click here to confirm')
+    // prompt('Enter id')
+    // var x=52
+    // document.getElementById('variable').innerText=x
+    // document.write(x)
+    // console.log(x);
+    // console.log('ssg');
+     var x
+     var y=10
+     var z=20
+     //alert(y+z) // to display sum of y and z using alert
+    // alert(x+z) // since x is not init, will display NaN in alert 
+   
+    var c= confirm('Click here to confirm') // assign true or false to c as confirm returns Boolean type value {true for OK and false for CANCEL}
+     console.log(c);
+
+
+       // var x="ab"  // x='ab' will also work
+    // var y="cd"
+    // console.log(typeof(x)); // tells data type of variable
+    // var x="abty"
+    // var y="cd"
+    // console.log(x+"   "+y); // concat two strings using +
+
+    // if-else concept
+    // var x=50
+    // if(x==5){
+    //     console.log("Matched")
+    // }
+    // else{
+    //     console.log("Not matched");
+    // }
+
+    //// TypeCasting \\\\
+    // var x='30'
+    // var y=Number(x) // string to number
+    // console.log(typeof(y));
+    // var x='234addakjd'
+    // var y=Number(x) // string to number not possible here as x has alphabetic chars
+    // console.log(y); // will give NaN(not a number) and NaN is typeof number only!!!!
+
+    var age = prompt("Enter age")
+    age = Number(age)
+    if (age >= 18) {
+        alert("Eligible to vote")
+    } else {
+        alert("Not eligible")
+    }
+</script>
+</html>

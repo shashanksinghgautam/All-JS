@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        //FUNCTIONS\\---> block of code to perform specific task
+
+         // return type is not needed in JS functions (return will work anyway)
+       /*  function fun_name(parameters(optional)){
+
+            return (optional)
+        } */
+
+        // function declarations are also HOISTED
+
+        // function cal(a,b,oprtr){
+        //     console.log(eval(a + oprtr + b)); // + is used here to make a whole string so that eval() can do operation
+        // }
+        // cal(1,2,"+") // will log 3
+        // cal(20,5,"/") // will log 4
+
+
+        // function cal(a,b,c){
+        //      console.log(a+b+c);
+        // }
+        // cal(1,2) // will log NaN as we passed only 2 args but it should be 3 args so 'c' will go undefined and will try to get added with 2 nums and NaN will be logged
+        //
+        // function cal(a,b){
+        //      console.log(a,b);
+        // }
+        // cal(1) // will log 1, undefined
+        //
+        // to handle this undefined,,,initialize var with default value (give some default value in para variables to avoid undefined)
+        // function cal(a,b=5){
+        //     console.log(a,b);
+        // }
+        // cal(1) // will log 1,5
+        // cal(1,2) // will log 1,2 (default value in parameter will be override by passed value)
+
+//=============================================================================================\\
+
+   // Self-Invoking Functions ---> functions executing without function call :-- no concept of scopes and hoisting is here
+    
+   //syntax
+   /*  (function xyz(parameter(optional)){
+      console.log("xyz");
+   })(parameter(optional)) */
+
+</script>
+</html>

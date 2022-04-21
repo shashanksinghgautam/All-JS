@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+              //ARRAYS\\
+
+        // let a=[1,2,3,4,5,"ABCD"] 
+        // console.log(a); // will log whole array
+        // console.log(a.length) // will log 6
+        
+        // Access element at an index
+        // let a=[1,2,3,4,5,"ABCD"] 
+        // console.log(a[2]); // will log 3
+
+        // STACK \\ LIFO
+        //
+        // let st=[1,2,3]
+        // st.push(5) // will add 5 add the end(RHS or TOP) of the array & will change the original array properties like length
+        // console.log(st); // will log 1,2,3,5
+        // console.log(st.pop()) // will log 5
+        // console.log(st); // will log 1,2,3
+      
+        //  .shift()
+        //  let a=[1,2,3,4,5]
+        //  console.log(a.shift()); // will remove 1 (start of the array "opposite of .pop()")
+        //  console.log(a); // will log 2,3,4,5
+        
+        // .unshift() --> adds elements at start (LHS) "Opposite of .push()"
+        // let a=[1,2,3,4,5]
+        // a.unshift(99) 
+        // console.log(a); // will log 99,1,2,3,4,5
+   
+        // for-of loop :-- to iterate thru array elemnts directly in ordered way 
+        //  let a=[1,2,3,4,5]
+        //  for(x of a){
+        //     console.log(x);
+        //  }
+        
+
+        // .concat() --> merge two arrays
+        // let a=[1,2,3]
+        // let b=[4,5,6]
+        // a.concat(b)// will not do anything
+        // let c=a.concat(b)
+        // console.log(a.concat(b)); // 1 2 3 4 5 6
+        // console.log(b.concat(a)) // 4 5 6 1 2 3
+        // console.log(c); // 1 2 3 4 5 6
+
+        // .slice()--> like substring method in JAVA
+        // let a=[1,2,3,4,5]
+        // console.log(a.slice(1,3)) // 2,3
+        
+        // let a=[1,2,3,4,5]
+        // a.slice(1,3) // will not do anything (need to assign in a var)
+        // console.log(a); // 1 2 3 4 5
+
+        // delete array[index]--> delete an element in array
+        // let a=[1,2,3,4,5]
+        // delete a[3] // remove elemnt at index 3 ie 4 and create a hole in its place(will not change the size even after deletion {a disadvantage of delete fun})
+        // console.log(a); // [1,2,3,empty,5] //size will be 5 only
+
+        // .splice() ---> HOMEWORK
+        // array.splice(index, howMany, [element1][, ..., elementN]); // to add one or multiple elements(howMany will be zero for this case)
+        // array.splice(index, howMany); // for deletion (howmany should be >=1 to delete something) 
+        // Parameter Details
+        // index − Index at which to start changing the array.
+        // howMany − An integer indicating the number of old array elements to remove. If howMany is 0, no elements are removed.
+        // element1, ..., elementN − The elements to add to the array. If you don't specify any elements, splice simply removes the elements from the array.
+        //
+        // Return Value
+        // Returns the extracted array based on the passed parameters.
+        //
+        //  var arr = ["orange", "mango", "banana", "sugar", "tea"];         
+        //  var removed = arr.splice(2, 0, "water");
+        //  document.write("After adding 1: " + arr );
+        //  document.write("<br />removed is: " + removed);
+        // 
+        //  removed = arr.splice(3, 1);
+        //  document.write("<br />After adding 1: " + arr );
+        //  document.write("<br />removed is: " + removed);
+   
+
+        // .toString() --> to convert array to string
+
+        // let a=[1,2,3]
+        // console.log(a); [1,2,3]
+        // a.toString(); // will do nothing
+        // a=a.toString(); // will convert array to string
+        // console.log(a); 1,2,3 // as string seperated by commas
+        
+        // Better way to convert array to String
+        // 1) .join()--> convert array to string and specific delimiter(no chnage in original array)
+        // let a=["1","2","3","4"]
+        // a.join(" ") // will not do anything
+        // let b=a.join("_")
+        // console.log(b); // 1_2_3_4
+        //
+        // 2) .spilt()-->converts String to array on basis of delimiter specified
+        //  let str="ABCD-XYZ-PQR"
+        //  console.log(str.split('-')); // log ["ABCD","XYZ","PQR"] // will spilt from the - (will make a cut as soon as - is found)
+        //  let str="ABCD-XYZ-PQR"
+        //  console.log(str.split('')); // will log all char seperated by commas when delimiter is null or empty String--->[A,B,C,D,-,X,Y,Z,-,P,Q,R]
+        
+        // .reverse() --> reverse the array (will change the original array)
+        
+        let x = 'JavaScript + HTML + CSS + Bootstrap'
+        console.log(x.split("").reverse().join("")); // will log  partstooB + SSC + LMTH + tpircSavaJ
+
+
+</script>
+</body>
+</html>

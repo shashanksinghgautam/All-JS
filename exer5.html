@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="calculate()">AgeWise Bill</button>
+</body>
+<script>
+       
+  function calculate(){
+    var bill=prompt("Enter the bill amount")
+      bill=Number(bill)
+      var age=prompt("Enter the age")
+      age=Number(age)
+    if(bill>3500 && age >=18){
+            bill=0.88*bill;
+        }
+    else if(bill>3500 && age<18){
+            bill=0.9*bill;
+        }
+
+        alert("Total bill is "+bill)
+    }
+</script>
+</html>

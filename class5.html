@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="bulbimg" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="">
+    <br> <br>
+    
+    <!-- <button onclick="onFun()" >ON</button>
+    <button onclick="offFun()">OFF</button> -->
+    <button onclick="onOff()">on-off</button>
+</body>
+<script>
+
+  function onOff(){
+       if(document.getElementById("bulbimg").src == "https://www.w3schools.com/js/pic_bulbon.gif"){
+            document.getElementById("bulbimg").src = "https://www.w3schools.com/js/pic_bulboff.gif" 
+        }
+       else{
+            document.getElementById("bulbimg").src = "https://www.w3schools.com/js/pic_bulbon.gif"
+        }
+    }
+
+
+
+    // function onFun(){
+    //     document.getElementById("bulbimg").src="https://www.w3schools.com/js/pic_bulbon.gif"
+        
+    // }
+    // function offFun(){
+    //     document.getElementById("bulbimg").src="https://www.w3schools.com/js/pic_bulboff.gif"
+
+    // }
+  a=10
+  b=5
+    // console.log(x ** y)  //--->> x to power y
+    console.log(a<<2)
+</script>
+</html>
+
+<!--
+    https://www.w3schools.com/js/pic_bulbon.gif
+  https://www.w3schools.com/js/pic_bulboff.gif
+-->
+
+<!--
+   -> Logical operators
+
+    && - AND
+    || - OR
+    !  - NOT
+
+   -> Assignment operators
+   
+    = ; += ; -= ; /= ; *= ; **=
+
+   -> Bitwise
+
+   | ; & ; ^ ; ~ (do 2's compliment then negate) ; >> ; <<
+-->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+  <script>
+      let x=prompt("Enter a number")
+      x=Number(x)
+      
+      function factorial(){
+          if(x>-1){
+          let f=1;
+          for(let i=1;i<=x;i++){
+              f*=i;
+          }
+          alert("Factorail="+f)
+          }
+          else{
+              alert("Enter a positive value")
+          }
+      }
+            
+      function isPrime(){
+          if(x>-1){
+         let count=0
+          for(let i=1;i<=x;i++){
+              if(x%i==0)
+              count++;
+          }
+          if(count==2)
+          alert("Prime")
+          
+          else{
+              alert('Not prime')
+          }
+        }
+          else{
+              alert("Enter a positive value")
+          }
+      }
+      factorial();
+      isPrime();
+
+  </script>
+</html>

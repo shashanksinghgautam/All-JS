@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" onclick="abc()"> -->
+    <!-- <input type="text" onfocus="abc()"> -->
+    <!-- <input type="text" onblur="abc()"> -->
+    <!-- <input type="text" onchange="abc()"> -->
+    <!-- <input type="text" ondblclick="abc()"> -->
+    <!-- <input type="text" onmouseover="abc()"> -->
+    <!-- <input type="text" onmouseleave="abc()"> -->
+    <!-- <input type="text" onmousemove="abc()"> -->
+
+
+    <!-- <input type="text" onkeydown="abc()">
+    <input type="text" onkeypress="abc()">
+    <input type="text" onkeyup="abc()"> -->
+
+
+
+</body>
+<script>
+
+    //  function abc(){
+    //      console.log("ABCD");
+    //  }
+
+    // EVENT HANDLERS \\
+    //
+    // <-----------MOUSE----------->
+    // 1. onclick--> detects click (continuously) (2 step (hover and click))
+    // 2. onfocus--> detects hovering and then click (4 step working--hover,,click,,unhove,,,Click))
+    // 3. onblur--> opposite working of onfocus (hover+clik)+(click ouside hovered element)   (3 step working )
+    // 4. onchange--> if value inside changes and click ouside the element then it works (4 step working)
+    // 5. ondblclick--> works on double click (like onclick)
+    // 6. onmouseover--> same like hovering (will detect all hovering)
+    // 7. onmouseout--> same like unHovering (will detect all unHovering)
+    // 8. onmouseleave--> same like onmouseout
+    // 9. onmousemove--> detect every mouse movement over the element
+    //
+    //
+    //<---------KEYBOARD--------->
+    // 1. onkeydown--> detecs a keyboard key press to down
+    // 2. onkeypress--> similar to onkeydown but 
+    // 3. onkeyup--> detecs a keyboard key pressed and then released
+    
+    //call back:-->
+    // function inside other function's parameter
+    // function abc(x){
+
+    // }
+    // abc(function()) // passed funtion will be assigned to x in parameter
+    
+    // in forof loop...modification done inside will not be visible to ouside scopes
+    
+    let arr=[1,2,3,4,5]
+    // .forEach() loop method\\ accepts a callback inside parenthesis
+    //Syntax-1
+    /*  forEach(function(element,index){ // 1st parameter will always be elements of the array and second one will be index...it's fixed (names of parameters can be anything like function(a,b)---->a will refer to element and b will refer to respective index)
+
+    }) */
+    //
+    arr.forEach(function(element,index){
+        console.log(index,element); // will log element with the index in array
+        console.log(index); // will log indexes only
+    })
+    //Syntax-2
+    /*  forEach((element,index)=>{ // converted to arrow function...has same functinality like above one
+
+    }) */
+    
+   
+
+
+
+
+
+
+</script>
+</html>
