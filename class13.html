@@ -34,7 +34,7 @@
     //
     // <-----------MOUSE----------->
     // 1. onclick--> detects click (continuously) (2 step (hover and click))
-    // 2. onfocus--> detects hovering and then click (4 step working--hover,,click,,unhove,,,Click))
+    // 2. onfocus--> detects hovering and then click (4 step working--hover,,click,,unhover,,,Click))
     // 3. onblur--> opposite working of onfocus (hover+clik)+(click ouside hovered element)   (3 step working )
     // 4. onchange--> if value inside changes and click ouside the element then it works (4 step working)
     // 5. ondblclick--> works on double click (like onclick)
@@ -56,16 +56,16 @@
     // }
     // abc(function()) // passed funtion will be assigned to x in parameter
     
-    // in forof loop...modification done inside will not be visible to ouside scopes
+    // in for-of loop...modification done inside will not be visible to ouside scopes
     
     let arr=[1,2,3,4,5]
-    // .forEach() loop method\\ accepts a callback inside parenthesis
+    // .forEach() loop method\\ used for arrays only,,,,,,,accepts a callback inside parenthesis
     //Syntax-1
     /*  forEach(function(element,index){ // 1st parameter will always be elements of the array and second one will be index...it's fixed (names of parameters can be anything like function(a,b)---->a will refer to element and b will refer to respective index)
 
     }) */
     //
-    arr.forEach(function(element,index){
+    arr.forEach(function(element,index){ // anonymous function is passed 
         console.log(index,element); // will log element with the index in array
         console.log(index); // will log indexes only
     })

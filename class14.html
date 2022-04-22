@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    //  forEach (continuation)\\ does not return anything
+
+    // let arr=[1,2,3,4]
+    // arr.forEach(function(e,i){
+    //     e=e+10
+    //     console.log(e); // will log 11,12,13,14 (bcz of same scope) and we r printing e..which is a local var
+    // })
+    // console.log(arr); // will log 1,2,3,4 (for-each also don't make change in original array)
+
+    // Syntax 2:- (forEach)
+    // let fun1=function(element,index){
+    //
+    // }
+    //
+    // arr.forEach(fun1) // now make a function call
+    //
+    //
+    // let arr=[1,2,3]
+    // let fun1=function(e,i){
+    //     console.log(e);
+    // }
+    // arr.forEach(fun1) // will log 1 2 3
+
+
+    //  filter method for array (makes no change in original array)\\ Loop through each element and return array of elemnts which match a particular condition
+    //  returns a condition
+    // Syntax
+    // arr.filter(function(e,i){
+    //     return 'condition'
+    // })
+    //
+    // let arr=[5,10,12,20]
+
+    // let x=arr.filter(function(e,i){ // have to assign in new variable to see changes
+    //     return e%5===0
+    // })
+    // console.log(arr); // will log 5,10,12,20
+    // console.log(x);   // will log 5,10,20 (12 will be filtered out by return condtion)
+
+    // let x=arr.filter((e,i)=> 'conditon') // short hand for filter for one liner code
+
+    // EXERCISE:-
+    // let a=['Akash', 'Naveen', 'Rama', 'Rambali', 'Shweta']
+    // let y=a.filter((e,i)=> {return e.length==6})
+    // console.log(y);
+
+    
+    // every() method for array \\-> return true if all elemnt in array satisfy given condition else false
+    // return a condition like filter
+    //
+    let a=[300,100,400,222,550]
+    
+    let x=a.every(function(e,i){
+        return e%10===0
+    })
+    console.log(x); // will log false
+
+
+
+</script>
+</html>
