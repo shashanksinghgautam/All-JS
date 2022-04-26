@@ -12,14 +12,14 @@
 <script>
 
     //  forEach (continuation)\\ does not return anything
-
+    //
     // let arr=[1,2,3,4]
     // arr.forEach(function(e,i){
     //     e=e+10
     //     console.log(e); // will log 11,12,13,14 (bcz of same scope) and we r printing e..which is a local var
     // })
     // console.log(arr); // will log 1,2,3,4 (for-each also don't make change in original array)
-
+    //
     // Syntax 2:- (forEach)
     // let fun1=function(element,index){
     //
@@ -43,15 +43,15 @@
     // })
     //
     // let arr=[5,10,12,20]
-
+    //
     // let x=arr.filter(function(e,i){ // have to assign in new variable to see changes
     //     return e%5===0
     // })
     // console.log(arr); // will log 5,10,12,20
     // console.log(x);   // will log 5,10,20 (12 will be filtered out by return condtion)
-
+    //
     // let x=arr.filter((e,i)=> 'conditon') // short hand for filter for one liner code
-
+    //
     // EXERCISE:-
     // let a=['Akash', 'Naveen', 'Rama', 'Rambali', 'Shweta']
     // let y=a.filter((e,i)=> {return e.length==6})
@@ -61,14 +61,18 @@
     // every() method for array \\-> return true if all elemnt in array satisfy given condition else false
     // return a condition like filter
     //
-    let a=[300,100,400,222,550]
+    // let a=[300,100,400,222,550]
+    //
+    // let x=a.every(function(e,i){
+    //     return e%10===0
+    // })
+    // console.log(x); // will log false as 222 is not divisible by 10
     
-    let x=a.every(function(e,i){
-        return e%10===0
-    })
-    console.log(x); // will log false
-
-
+    // some() method \\-> return true if any elemnt matches the condi. (oppo. of every())
+    // returns a condition
+   
 
 </script>
 </html>
+
+<!-- *EMPTY ARRAY IS A TRUTHY VALUE* -->

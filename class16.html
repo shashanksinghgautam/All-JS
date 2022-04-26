@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="objj"></h1>
+</body>
+<script>
+
+    // OBJECT \\ made inside {} block
+    // consist of key:value (pairs), separated by colon & different key-value pairs are seperated by commas
+    // key name should be a string (write key inside '' or without it as keys in JS are always treated as a String)
+    // let obj={
+    //      name:"Shashank",
+    //   'place':"Kanpur"
+    // }
+    // console.log(obj);
+  
+    // Keys in objects which are used only for access purpose are-Properties
+//     let obj={
+//        name:"Shashank",
+//       'place':"Kanpur",
+//       age:22,
+//       likesGaming:true
+//     }
+//     console.log(obj.name,obj.age); // will log Shashank 22
+
+//    obj.place="UP"
+//    console.log(obj);
+
+// JSON methods\\ JavaScript Object Notation
+//keys in objects used for execution purpose are Methods
+
+// let obj='{"name":"Shashank","place":"Kanpur","age":22}'  // object notation (all in single line (as a string inside ''(sigle quotes) and key-value inside double quotes ""))
+// console.log(obj); //{'name':'Shashank','place':'Kanpur','age':22}
+
+//JSON.parse(stringName)-->will give equivalent object extracted from the given string (string must in form of valid object kind otherwise error will occur)
+//  let obj1=JSON.parse(obj)
+//  console.log(obj1);  // {name: 'Shashank', place: 'Kanpur', age: 22}
+
+//     let obj={
+//        name:"Shashank",
+//       'place':"Kanpur",
+//     }
+//    document.getElementById('objj').innerHTML=obj  // will get [object Object] warning on the screen as we cann't display objects in DOM
+
+//JSON.stringify(object)--> will convert passed object to equivalent string
+//now we can print it in DOM
+//Keys will be quoted inside "" not ''
+
+// let obj={
+//        name:"Shashank",
+//       'place':"Kanpur",
+//     }
+//     let str=JSON.stringify(obj)
+//    document.getElementById('objj').innerHTML=str //diasplay {"name":"Shashank","place":"Kanpur"} on DOM
+
+
+//adding new key-val to obj
+// let obj={
+//        name:"Shashank",
+//       'place':"Kanpur",
+//     }
+//     console.log(obj);// logs {name: 'Shashank', place: 'Kanpur'}
+//     obj.age=22
+//     console.log(obj); // logs {name: 'Shashank', place: 'Kanpur', age: 22}
+//     console.log(obj.color); // undefined as color is not defined in obj
+
+
+ //values in objects can be arrays as well
+
+ let bank={
+     branch:["Mum","Pune","Kanpur"]
+ }
+ console.log(bank);
+</script>
+</html>
