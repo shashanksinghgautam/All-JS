@@ -1,5 +1,6 @@
 var displayArea = document.getElementById("display");
 let dotflag=false;
+
 function isOperator(buttonText) {
   if (buttonText == "+" || buttonText == "-" || buttonText == "*" || buttonText == "/" || buttonText == "%"){
     dotflag=false;
